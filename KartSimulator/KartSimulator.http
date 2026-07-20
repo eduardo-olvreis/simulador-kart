@@ -1,0 +1,6 @@
+@KartSimulator_HostAddress = http://localhost:5199
+
+GET {{KartSimulator_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
