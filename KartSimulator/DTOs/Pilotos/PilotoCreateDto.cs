@@ -16,5 +16,8 @@ namespace KartSimulator.DTOs.Pilotos
 
         [Range(0, 10, ErrorMessage = "Campo 'Consistência' deve estar entre o intervalo de 0 a 10.")]
         public int Consistencia { get; set; }
+
+        [Required(ErrorMessage = "O piloto deve ter um veiculo associado.")]
+        public int VeiculoId { get; set; }
     }
 }

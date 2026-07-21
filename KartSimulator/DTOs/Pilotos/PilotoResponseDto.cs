@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using KartSimulator.DTOs.Veiculos;
+using System.ComponentModel.DataAnnotations;
 
 namespace KartSimulator.DTOs.Pilotos
 {
@@ -10,5 +11,6 @@ namespace KartSimulator.DTOs.Pilotos
         public int CorridasVencidas { get; set; }
         public int HabilidadeCurvas { get; set; }
         public int Consistencia { get; set; }
+        public VeiculoResponseDto Veiculo { get; set; } = null!;
     }
 }

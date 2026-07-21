@@ -13,7 +13,5 @@ namespace KartSimulator.Entities
 
         [Range(45, 70, ErrorMessage = "A Velocidade Máxima deve ser entre 45 e 70.")]
         public int VelocidadeMaxima { get; set; }
-        
-        public Piloto? Piloto { get; set; }
     }
 }
