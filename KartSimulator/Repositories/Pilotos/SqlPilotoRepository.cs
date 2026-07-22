@@ -31,7 +31,6 @@ namespace KartSimulator.Repositories.Pilotos
 
         public async Task<Piloto> AtualizarPilotoAsync(Piloto piloto)
         {
-            if(await ObterPorIdAsync(piloto.Id) == null) { return null; }
             _context.Update(piloto);
             await _context.SaveChangesAsync();
             return piloto;
