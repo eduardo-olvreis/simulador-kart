@@ -2,7 +2,7 @@
 
 namespace KartSimulator.Repositories.Veiculos
 {
-    public interface IVeiculoInterface
+    public interface IVeiculoRepository
     {
         Task<Veiculo?> ObterPorIdAsync(int id);
         Task<List<Veiculo>> ObterTodosAsync();

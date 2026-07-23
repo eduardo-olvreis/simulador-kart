@@ -12,8 +12,8 @@ namespace KartSimulator.Controllers
     public class PilotoController : ControllerBase
     {
         private readonly IPilotoRepository _repository;
-        private readonly IVeiculoInterface _veiculoRepository;
-        public PilotoController(IPilotoRepository repository, IVeiculoInterface veiculoRepository)
+        private readonly IVeiculoRepository _veiculoRepository;
+        public PilotoController(IPilotoRepository repository, IVeiculoRepository veiculoRepository)
         {
             _repository = repository;
             _veiculoRepository = veiculoRepository;

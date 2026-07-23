@@ -10,7 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-builder.Services.AddScoped<IVeiculoInterface, SqlVeiculoRepository>();
+builder.Services.AddScoped<IVeiculoRepository, SqlVeiculoRepository>();
 builder.Services.AddScoped<IPilotoRepository, SqlPilotoRepository>();
 
 var app = builder.Build();

@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace KartSimulator.Repositories.Veiculos
 {
-    public class SqlVeiculoRepository : IVeiculoInterface
+    public class SqlVeiculoRepository : IVeiculoRepository
     {
         private readonly AppDbContext _context;
         public SqlVeiculoRepository(AppDbContext context)
