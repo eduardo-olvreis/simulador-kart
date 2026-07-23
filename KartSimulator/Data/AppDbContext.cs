@@ -8,5 +8,7 @@ namespace KartSimulator.Data
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
         public DbSet<Piloto> Pilotos { get; set; }
         public DbSet<Veiculo> Veiculos { get; set; }
+        public DbSet<Corrida> Corridas { get; set; }
+        public DbSet<ResultadoCorrida> ResultadoCorridas { get; set; }
     }
 }
