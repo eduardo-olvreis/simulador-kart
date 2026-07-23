@@ -15,5 +15,7 @@ namespace KartSimulator.Entities
         public int NumeroVoltas { get; set; }
 
         public DateTime DataCorrida { get; set; } = DateTime.UtcNow;
+
+        public List<ResultadoCorrida> Resultados { get; set; } = new();
     }
 }
