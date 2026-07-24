@@ -8,6 +8,6 @@ namespace KartSimulator.DTOs.Corridas
         public string NomePista { get; set; }
         public int NumeroVoltas { get; set; }
         public DateTime DataCorrida { get; set; }
-        public List<ResultadoCorrida> Resultados { get; set; } = new();
+        public List<PodioItemDto> Podio { get; set; } = new();
     }
 }
